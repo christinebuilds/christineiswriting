@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Christine Su</title>
+  <meta name="description" content="Get in touch with Christine Su.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="nav-logo">Christine is Writing</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="writing-coach.html">Writing Coach</a></li>
+        <li><a href="patterns.html">Patterns</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h1>Let's connect.</h1>
+    </div>
+  </section>
+
+  <section class="section-pad" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-content">
+        <p>
+          I'm always glad to hear from writers, builders, and fellow pattern-finders. Whether you have a question about the Writing Coach toolkit, want to discuss a collaboration, or just want to say hello — I'd love to hear from you.
+        </p>
+
+        <form class="contact-form" action="https://formsubmit.co/christineyws@gmail.com" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New message from christineiswriting.com">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_next" value="https://christineiswriting.com/thank-you.html">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="General">Just saying hello</option>
+              <option value="Writing Coach">Writing Coach Toolkit</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Speaking">Speaking / Events</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="What's on your mind?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <div style="margin-top: 4rem;">
+          <div class="divider" style="margin: 0 0 2rem 0;"></div>
+          <p class="section-label">Or find me elsewhere</p>
+          <ul class="contact-links">
+            <li>
+              <a href="https://christinesu.substack.com/" target="_blank" rel="noopener">
+                <span>Patterns on Substack</span>
+                <span class="link-label">Newsletter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/christinesu/" target="_blank" rel="noopener">
+                <span>Christine Su</span>
+                <span class="link-label">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Christine is Writing</span>
+        <ul class="footer-links">
+          <li><a href="https://christinesu.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="https://www.linkedin.com/in/christinesu/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Christine Su. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
